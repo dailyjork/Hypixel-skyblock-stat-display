@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypixel Stats</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <main>
+        <h1>Hypixel Player Stats</h1>
+        
+        <!-- Interactie 1: Zoeken -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Voer UUID in...">
+            <button id="searchButton">Zoeken</button>
+        </div>
+        
+        <!-- Interactie 2 & 3: Filters -->
+        <div class="filters">
+            <button id="filterOnline">Alleen Online</button>
+            <button id="sortByRank">Sorteer op Rank</button>
+        </div>
+        
+        <!-- Loading state -->
+        <div id="loader" class="hidden">⏳ Laden...</div>
+        
+        <!-- Data container -->
+        <section id="gallery" class="grid-container"></section>
+    </main>
+    
+    <script src="script/app.js"></script>
+    <script src="script/dataProcessing.js"></script>
+    <script src="script/getFunctions.js"></script>
+    <script src="script/node.js"></script>
+
+</body>
+</html>
