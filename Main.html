@@ -1,38 +1,53 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypixel Stats</title>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
     <link rel="stylesheet" href="style/index.css">
 </head>
-<body>
-    <main>
-        <h1>Hypixel Player Stats</h1>
-        
-        <!-- Interactie 1: Zoeken -->
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Voer UUID in...">
-            <button id="searchButton">Zoeken</button>
-        </div>
-        
-        <!-- Interactie 2 & 3: Filters -->
-        <div class="filters">
-            <button id="filterOnline">Alleen Online</button>
-            <button id="sortByRank">Sorteer op Rank</button>
-        </div>
-        
-        <!-- Loading state -->
-        <div id="loader" class="hidden">⏳ Laden...</div>
-        
-        <!-- Data container -->
-        <section id="gallery" class="grid-container"></section>
-    </main>
-    
-    <script src="script/app.js"></script>
-    <script src="script/dataProcessing.js"></script>
-    <script src="script/getFunctions.js"></script>
-    <script src="script/node.js"></script>
 
+<body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+    <main>
+            <div
+                class="row justify-content-between align-items-center g-2"
+            >
+                <div class="colName">Column</div>
+                <div class="colRank">Column</div>
+                <div class="colLevel">Column</div>
+        </div>
+    </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+            <script src="https://unpkg.com/skinview3d@3.0.0/dist/skinview3d.bundle.js"></script>
+            <script src="script/script.js"></script>
+    <script src="script/node.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
 </body>
 </html>
