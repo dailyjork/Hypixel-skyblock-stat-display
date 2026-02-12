@@ -1,0 +1,16 @@
+header {
+    background-color: rgb(61, 61, 61);
+    height: 4pc;
+}
+
+body {
+    background-image: url(../images/2026-02-12_09.41.08_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    color: aliceblue;
+}
+
+main {
+    align-items: center;
+}
