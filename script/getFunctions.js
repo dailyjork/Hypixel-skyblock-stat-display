@@ -1,7 +1,3 @@
-// data retrieving functions
-
-
-// get the minecraft uuid from username -- for retrieving information from other sources.
 async function  getUUID(username) {
     try {
         const response = await fetch(`https://api.ashcon.app/mojang/v2/user/${username}`);
@@ -13,7 +9,7 @@ async function  getUUID(username) {
         return null;
     }
 } 
-// get the discord username from discordId 
+/* 
 async function getDiscordusername(discordId) {
     try {
         const response = await fetch(`https://discord.com/api/v10/users/${discordId}`, {headers: {'Authorization': `Bot ${discordToken}`}});
@@ -27,7 +23,7 @@ async function getDiscordusername(discordId) {
         return null;
     }
 }
-// reqeust player data from api
+*/
 async function getPlayerData(uuid) {
     try {
         const response = await fetch(`https://api.hypixel.net/v2/player?uuid=${uuid}`, {headers: { 'API-Key': apiKey }});
@@ -40,7 +36,7 @@ async function getPlayerData(uuid) {
     }
     
 }
-// reqeust skyblock data from api
+
 async function getSkyblocData(uuid) {
     try {
         const response = await fetch(`https://api.hypixel.net/v2/skyblock/profiles?uuid=${uuid}`, {headers: { 'API-Key': apiKey }});
@@ -52,7 +48,7 @@ async function getSkyblocData(uuid) {
         return null;
     }
 }
-// get skin textures for image
+
 async function getSkinTexture(uuid) {
     try {
          const response = await fetch(`https://api.ashcon.app/mojang/v2/user/${uuid}`);

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+    <head>
         <title>Title</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
@@ -16,22 +16,39 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-    <link rel="stylesheet" href="style/index.css">
-</head>
+        <link rel="stylesheet" href="style/index.css">
+    </head>
 
-<body>
+    <body>
         <header>
-            <!-- place navbar here -->
+            <!-- HTML -->
+                <form id="inputForm" class="header-search">
+                    <input 
+                        type="text" 
+                        id="username" 
+                        placeholder="Enter Minecraft username..."
+                    >
+                </form>
         </header>
-    <main>
-            <div
-                class="row justify-content-between align-items-center g-2"
-            >
-                <div class="colName">Column</div>
-                <div class="colRank">Column</div>
-                <div class="colLevel">Column</div>
-        </div>
-    </main>
+        <main>
+            <div id="colPlayerSkin">
+                <canvas id="skin_container"></canvas>
+            </div>
+            <div id="player-card" class="card">
+                <div id="colName"></div>
+                <div id="colRank"></div>
+                <div id="colFirst"></div>
+                <div id="colStatus"></div>
+
+                <div class="links">
+                    <div id="colSkycrypt"></div>
+                    <div id="colPlancke"></div>
+                    <div id="colElitebot"></div>
+                </div>
+                
+                <div id="discord"></div>
+            </div>
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
@@ -42,12 +59,14 @@
             crossorigin="anonymous"
         ></script>
             <script src="https://unpkg.com/skinview3d@3.0.0/dist/skinview3d.bundle.js"></script>
-            <script src="script/script.js"></script>
-    <script src="script/node.js"></script>
+            <script src="script/dataProcessing.js"></script>
+            <script src="script/getFunctions.js"></script>
+            <script src="script/app.js"></script>
+            <script src="script/keys.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-</body>
+    </body>
 </html>
